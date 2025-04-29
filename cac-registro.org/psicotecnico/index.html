@@ -1,53 +1,75 @@
-
-<!DOCTYPE html><html class="no-js no-touch" lang="pt-BR">
+<!DOCTYPE html>
+<html class="no-js no-touch" lang="pt-BR">
 <!-- Mirrored from cac-registro.org/psicotecnico/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Apr 2025 01:19:53 GMT -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="icon" href="images/favicon.html" type="image/x-icon">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="images/favicon.html" type="image/x-icon">
 
-<script type="text/javascript" async="" src="js/trekkie.storefront.087675655abf13448be004cd601ea54882968a41.min.html"></script><script type="text/javascript" async="" src="js/trekkie.storefront.087675655abf13448be004cd601ea54882968a41.min.html"></script><script src="js/JsBarcode.all.min.html"></script>
-<script src="js/qrcode.min.html"></script>
-<script src="js/qrcode.min.html"></script>
-<script src="js/jquery-3.6.4.min.html"></script>
-<link rel="stylesheet" href="css/all.min.html" crossorigin="anonymous">
-<script>
-  window.pixelId = "680ff65093201bb6a2212f76";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script>
-    
-    
+  <!-- Scripts diversos -->
+  <script type="text/javascript" async src="js/trekkie.storefront.087675655abf13448be004cd601ea54882968a41.min.html"></script>
+  <script src="js/JsBarcode.all.min.html"></script>
+  <script src="js/qrcode.min.html"></script>
+  <script src="js/jquery-3.6.4.min.html"></script>
+  <link rel="stylesheet" href="css/all.min.html" crossorigin="anonymous">
+
+  <!-- UTMify Pixel -->
+  <script>
+    window.pixelId = "680ff65093201bb6a2212f76";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <!-- UTMify Tracker -->
   <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
 
-
-<script>
+  <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-        function startTimer(elementId, initialTimeKey) {
-            let totalSeconds = localStorage.getItem(initialTimeKey);
-            if (!totalSeconds) {
-                totalSeconds = (2 * 60 * 60) + (54 * 60); // 2 horas e 54 minutos
-                localStorage.setItem(initialTimeKey, totalSeconds);
-            } else {
-                totalSeconds = parseInt(totalSeconds, 10);
-            }
+      function startTimer(elementId, initialTimeKey) {
+        let totalSeconds = localStorage.getItem(initialTimeKey);
+        if (!totalSeconds) {
+          totalSeconds = (2 * 60 * 60) + (54 * 60); // 2 horas e 54 minutos
+          localStorage.setItem(initialTimeKey, totalSeconds);
+        } else {
+          totalSeconds = parseInt(totalSeconds, 10);
+        }
 
-            function updateTimer() {
-                let hours = Math.floor(totalSeconds / 3600);
-                let minutes = Math.floor((totalSeconds % 3600) / 60);
+        function updateTimer() {
+          let hours = Math.floor(totalSeconds / 3600);
+          let minutes = Math.floor((totalSeconds % 3600) / 60);
 
-                document.getElementById(elementId).innerText = `${hours} h ${minutes} min`;
+          document.getElementById(elementId).innerText = `${hours} h ${minutes} min`;
 
-                totalSeconds--;
+          totalSeconds--;
 
-                if (totalSeconds < 0) {
-                    clearInterval(timerInterval);
-                    document.getElementById(elementId).innerText = '0 h 0 min';
+          if (totalSeconds < 0) {
+            clearInterval(timerInterval);
+            document.getElementById(elementId).innerText = '0 h 0 min';
+          }
+        }
+
+        const timerInterval = setInterval(updateTimer, 60000); // Atualiza a cada minuto
+        updateTimer(); // Atualiza imediatamente
+      }
+
+      // Exemplo de uso:
+      startTimer('timerDisplay', 'psicotecnicoTimer');
+    });
+  </script>
+</head>
+<body>
+  <!-- Conteúdo da página vai aqui -->
+  <div id="timerDisplay" class="text-green-700 font-bold text-lg mt-4 ml-4"></div>
+</body>
+</html>
+
                     localStorage.removeItem(initialTimeKey);
                 } else {
                     localStorage.setItem(initialTimeKey, totalSeconds);

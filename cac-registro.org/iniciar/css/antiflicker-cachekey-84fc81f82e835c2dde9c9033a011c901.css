@@ -1,0 +1,13 @@
+
+/* - antiflicker.css - */
+/* https://www.gov.br/portal_css/antiflicker.css?original=1 */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+.async-hide .linha-recom .servicos-em-destaque-govbr,
+.async-hide .linha-recom .servicos-em-destaque-govbr *
+{visibility: hidden !important; }
+
